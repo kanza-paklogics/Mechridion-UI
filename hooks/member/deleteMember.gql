@@ -1,0 +1,7 @@
+mutation deleteMemberMutation($id: ID!) {
+  deleteMember(id: $id) {
+    status
+    message
+    userData
+  }
+}

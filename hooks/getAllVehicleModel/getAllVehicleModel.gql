@@ -1,0 +1,12 @@
+  query getAllVehicleModel($searchQuery:String) {
+    getAllVehicleModel(searchQuery:$searchQuery) {
+      totalCount
+      nodes {
+        _id    
+        name
+        modelYear
+        generationID
+
+      }
+    }
+  }

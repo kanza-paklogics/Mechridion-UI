@@ -1,0 +1,7 @@
+query getAllMemberByID($id: ID!) {
+  getMemberById(id: $id) {
+    status
+    message
+    userData
+  }
+}

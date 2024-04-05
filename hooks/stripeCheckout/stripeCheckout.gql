@@ -1,0 +1,7 @@
+mutation createStripeCheckOutSession($priceId: ID, $quantity: Int) {
+  createStripeCheckOutSession(input: { priceId: $priceId, quantity: $quantity }) {
+    status
+    message
+    stripeData
+  }
+}

@@ -1,0 +1,9 @@
+query {
+  retrieveStripeListAllProduct(limit: 2) {
+    id
+    name
+    active
+    description
+    default_price
+  }
+}

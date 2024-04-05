@@ -1,0 +1,62 @@
+ query getAllVehicleVariantsByModel($vehicleModelId:ID!) {
+    getAllVehicleVariantsByModel(vehicleModelId:$vehicleModelId) {
+      nodes {
+        _id
+        vehicleModelId
+        productId
+        brand
+        model
+        brakes {
+          frontBrakes
+          rearBrakes
+        }
+        coolant
+        positionCylinders
+        compressionRatio
+        valveTrain
+        generation
+        valvesPerCylinder
+        engineOilSpecs {
+          engineOilCapacity
+          oil
+        }
+        drive
+        gearBoxType
+        engineSpec {
+          engineCode
+          enginePosition
+          engineDisplacement
+        }
+        torqueValue {
+          torque
+          torqueNm
+          torqueRpm
+          torqueRpmLow
+          torqueRpmHigh
+        }
+        Suspension {
+          frontSuspension
+          rearSuspension
+        }
+        fuelSystem
+        turbine
+        positionCylinders
+        cylinders
+        bore
+        stroke
+        powerSpec {
+          powerTrain
+          power
+          powerHp
+          powerRpm
+          powerRpmLow
+        }
+        rimsSize {
+          all
+        }
+        tireSize {
+          all
+        }
+      }
+    }
+  }

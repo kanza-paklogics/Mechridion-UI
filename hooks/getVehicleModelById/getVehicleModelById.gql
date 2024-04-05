@@ -1,0 +1,6 @@
+  query getVehicleModelById($id:ID!) {
+    getVehicleModelById(id:$id) {
+        _id    
+       
+    }
+  }

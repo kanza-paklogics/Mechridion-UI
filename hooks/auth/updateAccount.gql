@@ -1,0 +1,10 @@
+mutation updateAccount($accountId: ID, $firstName: String) {
+  updateAccount(input: { accountId: $accountId, firstName: $firstName }) {
+    account {
+      _id
+      firstName
+      phone
+      primaryEmailAddress
+    }
+  }
+}

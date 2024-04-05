@@ -1,0 +1,7 @@
+mutation updateMemberMutation($input: updateMemberInput) {
+  updateMember(input: $input) {
+    status
+    message
+    userData
+  }
+}

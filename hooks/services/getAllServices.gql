@@ -1,0 +1,14 @@
+query {
+  getAllServices {
+    name
+    _id
+    options {
+      name
+      price
+      imageLink
+    }
+    createdAt
+    imageLink
+    updatedAt
+  }
+}

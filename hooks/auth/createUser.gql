@@ -1,0 +1,27 @@
+mutation createUser(
+  $firstName: String!
+  $lastName: String!
+  $phone: String!
+  $email: String
+  $password: String
+  $memberRole: memberRoleValue
+) {
+  createUser(
+    user: {
+      firstName: $firstName
+      lastName: $lastName
+      phone: $phone
+      email: $email
+      password: $password
+      memberRole: $memberRole
+    }
+  ) {
+    userId
+    loginResult {
+      tokens {
+        refreshToken
+        accessToken
+      }
+    }
+  }
+}

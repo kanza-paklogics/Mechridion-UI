@@ -1,0 +1,7 @@
+mutation addMember($input: addMemberInput) {
+  addMember(input: $input) {
+    status
+    message
+    userData
+  }
+}

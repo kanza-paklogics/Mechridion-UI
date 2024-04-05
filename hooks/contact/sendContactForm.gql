@@ -1,0 +1,8 @@
+mutation sendContactForm(
+  $name: String!
+  $email: String!
+  $phoneNumber: String!
+  $message: String!
+) {
+  sendContactForm(name: $name, email: $email, phoneNumber: $phoneNumber, message: $message)
+}
